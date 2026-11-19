@@ -1,12 +1,34 @@
-# Cybersecurity & Ethical Hacking Roadmap (Kali Linux Quick-Ref & Study Guide)
+<p align="center">
+  <img src="assets/nomad_hacker_banner.png" alt="The Nomad Hacker Roadmap" width="100%">
+</p>
+
+# The Nomad Hacker Roadmap
+
+**An open-source, Kali Linux-focused Zero-to-Intermediate Cybersecurity & Ethical Hacking Guide — built as both a structured curriculum and a copy-pasteable field quick-reference.**
 
 > [!CAUTION]
 > **Educational & Authorized Use Only**
-> Every tool, command, and technique documented in this repository is intended strictly for **educational purposes**, **authorized penetration testing**, **defensive security engineering**, and **legal lab/CTF environments**. Never run offensive scans or exploits against systems you do not own or lack explicit written permission to test.
+> Every tool, command, and lab in **The Nomad Hacker Roadmap** is strictly for **educational purposes**, **authorized penetration testing**, **defensive security engineering**, and **legal lab/CTF environments**. Never run offensive scans, wireless attacks, or exploits against systems or networks you do not own or lack explicit written permission to test.
 
-Welcome to the **Kali Linux-Focused Zero-to-Intermediate Cybersecurity Roadmap**. This repository is designed as a **dual-purpose guide**:
-1. **A structured learning path** taking you from Kali Linux & networking fundamentals to practical Red Team (Offensive) and Blue Team (Defensive) workflows.
-2. **A detailed quick-reference cheatsheet** with verified **Kali Linux CLI commands**, `/usr/share/` wordlist & resource paths, mental models, diagrams, detection notes, and hands-on lab recommendations.
+---
+
+## Why This Roadmap?
+
+Most cybersecurity resources are either **too theoretical** (walls of textbook prose) or **too cryptic** (raw one-liners with zero explanation). **The Nomad Hacker Roadmap** bridges both:
+
+- **Learn by Doing:** Every lesson includes a **self-contained, step-by-step copy-paste lab** (using Docker, local loopbacks, or isolated VMs) with clear explanations of *what* each flag does and *why* it works.
+- **Kali Linux-First:** Built around real Kali paths (`/usr/share/wordlists/`, `/usr/share/seclists/`, `/usr/share/peass/`), `impacket-*` commands, `wifite2`/`hcxdumptool`, Burp Suite, and `tmux` workflows.
+- **Red + Blue Perspective:** Even offensive guides include **Defensive & Detection Notes** so you understand how SOC analysts spot and stop every technique.
+- **Dedicated `tools/` Manuals:** Every track (`common`, `offensive`, `defensive`) has its own `tools/` folder with deep-dive flag references and real-world workflows.
+
+### How to Study This Repo (Recommended Path)
+1. **Clone & Star** this repo so you always have an offline quick-ref:
+   ```bash
+   git clone https://github.com/The-Open-Source-Founder/nomad_hacker_roadmap.git
+   ```
+2. **Start with Phase 1 (`learnings/common/`)** — build your isolated lab, learn networking, Linux, Windows/AD, HTTP, and crypto.
+3. **Pick a Track (or do both!)** — follow **Phase 2A (Offensive / Red Team)** or **Phase 2B (Defensive / Blue Team)** in order.
+4. **Keep `tools/` bookmarked** — whenever you're in a CTF or lab, jump straight into `learnings/*/tools/` for exact command syntax.
 
 ### Kali Linux Quick-Start (First 5 Minutes)
 ```bash
